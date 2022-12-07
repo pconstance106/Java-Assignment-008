@@ -22,9 +22,7 @@ public class InfiniteSeries {
         }
         public static double check(double x, int n) {
             double exp = myExp(x, n);
-            System.out.printf("%12s  %s%n","x:",x);
-            System.out.printf("%12s  %s%n","myExp(x):",exp);
-            System.out.printf("%12s  %s%n","Math.exp(x):",Math.exp(x));
+            System.out.println(x+"\t"+myExp(x, n)+"\t"+Math.exp(x));
             return exp;
         }
     }
